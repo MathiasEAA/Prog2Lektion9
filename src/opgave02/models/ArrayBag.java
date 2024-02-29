@@ -117,10 +117,9 @@ public class ArrayBag<E> implements Bag<E> {
 
     @Override
     public E[] toArray() {
-        int length = items.length;
         @SuppressWarnings("unchecked")
-        E[] newArray = (E[]) new Object[length];
-        for (int i = 0; i < items.length; i++) {
+        E[] newArray = (E[]) new Object[size];
+        for (int i = 0; i < size; i++) {
             newArray[i] = items[i];
         }
         return newArray;

@@ -1,5 +1,6 @@
 package opgave03.models;
 
+import java.util.ArrayList;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
@@ -50,9 +51,9 @@ public interface Ring<T> {
     boolean isEmpty();
 
     /** Applies the function to each element in the ring and stores the result in the same place*/
-    //void map(Function<T, T> function);
+    void map(Function<T, T> function);
 
     /** Returns a new Ring with thoose elements that satisfy the predicate*/
-    //Ring<T> where(Predicate<T> predicate);
+    Ring<T> where(Predicate<T> predicate);
 
 }
